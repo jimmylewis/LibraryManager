@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <RootNamespace>Microsoft.Web.LibraryManager.Tools</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <PackAsToolShimRuntimeIdentifiers>win-x64;win-x86;osx-x64</PackAsToolShimRuntimeIdentifiers>
@@ -10,9 +10,6 @@
     <PackageId>Microsoft.Web.LibraryManager.Cli</PackageId>
     <Description>Command line tool for Library Manager</Description>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System.Runtime" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.CommandLineUtils.Sources" PrivateAssets="all" />
   </ItemGroup>
